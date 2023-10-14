@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: rgb(255, 255, 255);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 85px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  line-height: 85px;
+}
+#prev_next_btn{
+  width: 1070px;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+  padding: 10px;
+}
+#prev,#next{
+  height:35px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.721);
+  font-weight: 600;
+  cursor: pointer;
+}
+#prev:hover,#next:hover{
+  transform: scale(1.1);
+  background-color: rgb(198, 42, 42);
+}
+#prev:active,#next:active{
+  transform: scale(0.9);
+}
+#pageno{
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 7px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#container{
+  display: flex;
+  margin: auto;
+  width: 1050px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 3px 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main_card_col{
+  display: flex;
+  flex-direction: column;
+}
+#main_card_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.948);
+  height: 100px;
+  width: 990px;
+  margin-top: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 200px 0px;
+  padding: 5px;
+}
+#detail_1{
+  margin-left: 5px;
+}
+#detail_2{
+  position: absolute;
+  left: 35%;
+}
+#detail_3{
+  position: absolute;
+  padding-right: 100px;
+  left: 50%;
+}
+#detail_4{
+  position: absolute;
+  padding-right: 100px;
+  left: 70%;
+}
+.Collapsible{
+  cursor: pointer;
+  background-color: rgb(223, 251, 253);
+  padding: 5px;
+  background-image: linear-gradient(to right, #d5ffff, #e1feff, #effdff, #fafdff, #ffffff);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#more_info{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 20px;
+}
+#desc_col_1,#desc_col_2{
+  display: flex;
+  flex-direction: column;
+}
+#desc_col_1{
+  margin-left: 20px;
+}
+#desc_row{
+  display: flex;
+  flex-direction: row;
+}
+h3,#desc_heading{
+  margin-left: 20px;
 }
